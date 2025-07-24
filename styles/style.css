@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+/*shared style*/
+
+
+.display-flex{
+    display: flex;
+}
+.color-txt{
+    color: #E95A08;
+}
+/*light-font*/
+.light-font{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+    font-weight: 400;
+    
+}
+/*Nav styles*/
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    max-width:1140px;
+    height: 71px;
+    margin: 30px auto;
+    padding: 0px;
+    
+}
+.nav-items{
+    list-style: none;
+    margin-right: 48px;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+
+}
+.nav-txt-color{
+    color: #8987A1;
+}
+.nav-logo{
+    position: static;
+    width: 135px;
+    height: 82px;
+    margin: 0 10px;
+}
+
+/*banner style*/
+.banner-title{
+font-size: 4.06rem;
+font-weight: bold;
+}
+.banner{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+   /* margin: 221px 150px;*/
+   margin: 100px auto;
+   padding: 0 150px;
+    max-width: 1140px;
+    
+}
+.banner-description{
+    max-width: 570px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+.banner-title {
+  margin-bottom: 13px;
+}
+.banner-img{
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+    display: block;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 570px;
+  height: 100%;
+
+}
+/*responsive*/
+
+@media screen and (max-width:576px){
+     .nav-items {
+    display: none; 
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cart-item {
+    display: block; 
+  }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 0 0;
+        margin: 50px auto;
+    }
+    .banner-img{
+    max-width: 100%;
+    height: auto;
+   margin: 0 auto;
+
+    }
+    .banner-content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .banner-description {
+    max-width: 100%;
+    text-align: left;
+    font-size: 14px;
+    
+  }
+  .banner-title{
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 0px ;
+  }
+
+}
