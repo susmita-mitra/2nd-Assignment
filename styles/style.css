@@ -580,7 +580,7 @@ background-color: transparent;
    /* min-height: 250px;*/
     width: 100%;
     width: 361px;
-    margin-left: -0.5;
+   margin: 0 auto;
     margin-bottom: 15px;
     
   }
@@ -615,7 +615,7 @@ background-color: transparent;
 
     max-width: 393px;
     width: 100%;
-    padding: 0;
+    padding: 18px;
     margin: 0;
     }
     .subscribe-form {
@@ -718,6 +718,9 @@ background-color: transparent;
   .social-icons img {
     width: 36px;
     height: 36px;
+  }
+  *{
+    outline: 1px solid red;
   }
 }
 
