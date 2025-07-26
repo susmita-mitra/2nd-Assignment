@@ -348,7 +348,7 @@ background-color: transparent;
 .colorful-bunch-section {
     background-image: url('../assets/news-letter-bg.png'); 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     max-width: 1440px;
     width: 100%;
