@@ -54,6 +54,10 @@ font-size: 16px;
 font-weight: 600;
 
 }
+.primary-button:hover{
+  background-color: rgb(59, 41, 16);
+  cursor: pointer;
+}
 /*Nav styles*/
 .navbar{
     justify-content: space-between;
@@ -346,6 +350,7 @@ background-color: transparent;
    padding: 42px;
     /*margin: 0 auto;*/
     margin-top: 120px;
+    margin-bottom: 5px;
   
 }
 .colorful-bunch-content {
@@ -380,11 +385,80 @@ background-color: transparent;
     max-width:560px;
     
 }
+/*footer*/
+.site-footer {
+  background-color:#f5f8ff;
+  padding:40px 20px;
+  margin-left: 150px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+.footer-column {
+  flex: 1 1 100px;
+  min-width: 200px;
+  margin-left: 10px;
+}
+.footer-2-coloums{
+  display: flex;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.footer-logo {
+  width: 135px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 22px;
+  width: 359px;
+
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 32px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: rgba(107, 114, 128, 1);
+  font-size: 14px;
+  /*transition: color 0.3s;*/
+}
+
+.footer-column ul li a:hover {
+  color: #f60;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.social-icons img {
+  width: 36px;
+  height: 36px;
+}
 
 
 /*responsive*/
 
 @media screen and (max-width:576px){
+  
      .nav-items {
     display: none; 
   }
@@ -414,13 +488,14 @@ background-color: transparent;
     text-align: center;
     margin-top: 10px;
   }
+  .banner-description{
+    font-size: 14px;
+  }
 
-  .banner-description .plants-lover-description {
+   .plants-lover-description {
     max-width: 90%;
     text-align: left;
     font-size: 14px;
-    
-    
   }
   .banner-title{
     text-align: left;
@@ -478,6 +553,9 @@ background-color: transparent;
     justify-items: left;
     margin-left: 0;
   }
+  .plants-lover-title{
+    margin-bottom: 15px;
+  }
 
   .plants-lover-description {
     font-size: 14px;
@@ -502,7 +580,7 @@ background-color: transparent;
    /* min-height: 250px;*/
     width: 100%;
     width: 361px;
-    margin-left: 13px;
+    margin-left: -0.5;
     margin-bottom: 15px;
     
   }
@@ -537,7 +615,7 @@ background-color: transparent;
 
     max-width: 393px;
     width: 100%;
-    padding: 18.5px;
+    padding: 0;
     margin: 0;
     }
     .subscribe-form {
@@ -559,6 +637,90 @@ background-color: transparent;
       /*width: 103px;*/
       height: 50px;
     }
+    /*.footer-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      width: 100%;
+    }
+    .site-footer{
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      max-width: 359px;
+      padding: 5px;
+      width: 100%;
+
+    }
+    .footer-column p{
+      font-size: 16px;
+    }
+    
+    .footer-column{
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-left: 0;
+    }
+    .social-icons{
+      justify-content: flex-start;
+    }*/
+  .site-footer {
+    margin-left: 0;
+    padding: 40px 0.5px;
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 24px;
+  }
+
+  .footer-2-coloums {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin-left: 0;
+  }
+
+  .footer-column p {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 15px;
+  }
+
+  .footer-column ul li a {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .social-icons a {
+    margin-right: 0;
+  }
+
+  .social-icons img {
+    width: 36px;
+    height: 36px;
+  }
 }
+
+
 
 
