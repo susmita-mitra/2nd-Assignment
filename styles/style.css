@@ -613,9 +613,9 @@ background-color: transparent;
 
     .colorful-bunch-section {
 
-    max-width: 393px;
+   max-width: 393px;
     width: 100%;
-    padding: 18px;
+    padding: 0;
     margin: 0;
     }
     .subscribe-form {
